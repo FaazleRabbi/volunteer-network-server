@@ -39,7 +39,6 @@ client.connect((err) => {
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
-  console.log("Hello World");
 });
 
-app.listen(port);
+app.listen(process.env.PORT || port);
